@@ -28,7 +28,7 @@ net.createServer((socket) => {
   socket.on('error', (err) => {
     console.error('Socket error', err)
   })
-}).listen(SOCKET_PORT, '127.0.0.1')
+}).listen(SOCKET_PORT)
 
 const server = http.createServer((req, res) => {
   console.log(new Date(), req.url)
